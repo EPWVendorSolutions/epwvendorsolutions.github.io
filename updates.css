@@ -1,0 +1,9 @@
+.four{grid-template-columns:repeat(4,1fr)}
+.two{grid-template-columns:repeat(2,1fr)}
+.compact-title{font-size:clamp(18px,4.5vw,58px);white-space:nowrap}
+.list-title{font-family:Georgia,'Times New Roman',serif;font-size:24px;color:var(--ink);margin-bottom:14px}
+.check-list{columns:2;column-gap:34px;padding-left:22px;margin:0 0 28px}
+.check-list li{break-inside:avoid;padding:5px 0}
+.protocol-note{border-left:4px solid var(--gold);padding:22px 26px;margin-top:32px;background:var(--paper)}
+@media(max-width:900px){.four{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:680px){.four,.two{grid-template-columns:1fr}.check-list{columns:1}}
