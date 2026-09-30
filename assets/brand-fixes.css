@@ -1,10 +1,10 @@
 /* Final brand, layout, and mobile legibility refinements */
-.hero-panel {
-  max-width: 370px;
-  aspect-ratio: 3 / 4;
-  background: radial-gradient(circle, #392b15, #0c0b0a);
-  padding: 0;
+.hero-grid {
+  grid-template-columns: 1fr;
+  min-height: 0;
 }
+.hero-grid > div:first-child { max-width: 900px; }
+.hero-panel { display: none; }
 
 .four { grid-template-columns: repeat(4, 1fr); }
 .two { grid-template-columns: repeat(2, 1fr); }
@@ -26,13 +26,5 @@
   .four, .two { grid-template-columns: 1fr; }
   .check-list { columns: 1; }
   .hero-grid { padding-block: 45px; }
-  .hero-panel {
-    display: block;
-    grid-row: 1;
-    max-width: none;
-    width: 100%;
-    box-shadow: 12px 12px 0 #302a20;
-    padding: 0;
-    margin-bottom: 8px;
-  }
+  .hero-panel { display: none; }
 }
