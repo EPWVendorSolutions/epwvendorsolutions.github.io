@@ -5,5 +5,9 @@
 .check-list{columns:2;column-gap:34px;padding-left:22px;margin:0 0 28px}
 .check-list li{break-inside:avoid;padding:5px 0}
 .protocol-note{border-left:4px solid var(--gold);padding:22px 26px;margin-top:32px;background:var(--paper)}
+.promise-lines{font-size:clamp(34px,5vw,68px)}
+.promise-lines span{display:block;white-space:nowrap}
+.split p:not(.eyebrow){color:var(--muted)}
+.dark-band .split p:not(.eyebrow){color:#d1cbc1}
 @media(max-width:900px){.four{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.four,.two{grid-template-columns:1fr}.check-list{columns:1}}
