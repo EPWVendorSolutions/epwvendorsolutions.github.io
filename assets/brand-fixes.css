@@ -1,0 +1,38 @@
+/* Final brand, layout, and mobile legibility refinements */
+.hero-panel {
+  max-width: 370px;
+  aspect-ratio: 3 / 4;
+  background: radial-gradient(circle, #392b15, #0c0b0a);
+  padding: 0;
+}
+
+.four { grid-template-columns: repeat(4, 1fr); }
+.two { grid-template-columns: repeat(2, 1fr); }
+.compact-title { font-size: clamp(18px, 4.5vw, 58px); white-space: nowrap; }
+.list-title { font-family: Georgia, 'Times New Roman', serif; font-size: 24px; color: var(--ink); margin-bottom: 14px; }
+.check-list { columns: 2; column-gap: 34px; padding-left: 22px; margin: 0 0 28px; }
+.check-list li { break-inside: avoid; padding: 5px 0; }
+.protocol-note { border-left: 4px solid var(--gold); padding: 22px 26px; margin-top: 32px; background: var(--paper); }
+.promise-lines { font-size: clamp(34px, 5vw, 68px); }
+.promise-lines span { display: block; white-space: nowrap; }
+.eyebrow { font-size: clamp(14px, 1.25vw, 16px); line-height: 1.55; }
+.tagline { font-size: clamp(14px, 1.25vw, 16px); line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .four { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 680px) {
+  .four, .two { grid-template-columns: 1fr; }
+  .check-list { columns: 1; }
+  .hero-grid { padding-block: 45px; }
+  .hero-panel {
+    display: block;
+    grid-row: 1;
+    max-width: none;
+    width: 100%;
+    box-shadow: 12px 12px 0 #302a20;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+}
