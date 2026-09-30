@@ -5,5 +5,26 @@
 .check-list{columns:2;column-gap:34px;padding-left:22px;margin:0 0 28px}
 .check-list li{break-inside:avoid;padding:5px 0}
 .protocol-note{border-left:4px solid var(--gold);padding:22px 26px;margin-top:32px;background:var(--paper)}
+.promise-lines{font-size:clamp(34px,5vw,68px)}
+.promise-lines span{display:block;white-space:nowrap}
+.split p:not(.eyebrow){color:var(--muted)}
+.dark-band .split p:not(.eyebrow){color:#d1cbc1}
 @media(max-width:900px){.four{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.four,.two{grid-template-columns:1fr}.check-list{columns:1}}
+
+/* Keep every gold uppercase subject line consistent with the Home page. */
+.eyebrow,.tagline{font-size:16px;line-height:1.55}
+
+/* Match each inner-page hero subject to the Home hero's light gold. */
+.page-hero .eyebrow{color:var(--gold-light)}
+
+/* Give the upper-left EPW & Co. identity more presence on every page. */
+.brand-mark{font-size:32px}
+.brand-mark span{font-size:11px}
+.brand-name{font-size:12px;line-height:1.25}
+
+@media(max-width:680px){
+  .brand-mark{font-size:25px}
+  .brand-mark span{font-size:9px}
+  .brand-name{font-size:10px}
+}
